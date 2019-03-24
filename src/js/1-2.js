@@ -30,7 +30,7 @@ var wheelDeltaLinstner = function () {
                     return false;
                 }
                 document.getElementById('img_bg' + (count - 1)).style.top = parseInt(document.getElementById('img_bg' + (count - 1)).style.top) - 20 + 'px';
-                
+                document.getElementById('content' + (count - 1)).style.top = parseInt(document.getElementById('content' + (count - 1)).style.top) - 20 + 'px';
                 document.getElementById('img_bg' + count).style.top = parseInt(document.getElementById('img_bg' + (count - 1)).style.top) + img_height + 'px';
                 if (parseInt(document.getElementById('img_bg' + count).style.top) < 20) {
                     document.getElementById('img_bg' + count).style.top = 0 + 'px';
@@ -48,8 +48,8 @@ var wheelDeltaLinstner = function () {
                     clearInterval(timer);
                     return false;
                 }
-                console.log(count);
                 document.getElementById('img_bg' + (count + 1)).style.top = parseInt(document.getElementById('img_bg' + (count + 1)).style.top) + 20 + 'px';
+                document.getElementById('content' + (count + 1)).style.top = parseInt(document.getElementById('content' + (count + 1)).style.top) + 20 + 'px';
                 document.getElementById('img_bg' + count).style.top = parseInt(document.getElementById('img_bg' + (count + 1)).style.top) - img_height + 'px';
                 if (parseInt(document.getElementById('img_bg' + count).style.top) < 20) {
                     document.getElementById('img_bg' + count).style.top = 0 + 'px';
