@@ -1,0 +1,65 @@
+.box {
+    width: 600px;
+    height: 350px;
+    margin: 100px auto;
+    box-shadow: 1px 1px 5px 1px red;
+    position: relative;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+.box .list img {
+    width: 600px;
+    height: 350px;
+}
+
+.box .list a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.box .list a:nth-of-type(1) {
+    opacity: 1;
+}
+
+.box .dot {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* inherit继承 向上找父元素的颜色 如果找到则使用此父元素的颜色
+     如果找不到 则一直向上找 直到找到HTML标签 如果HTML标签还没有
+     设置颜色的话 则使用默认值 */
+}
+
+.box .dot a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: white;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 10px;
+    line-height: 30px;
+    box-shadow: 0 0 10px 0 #000;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.box .dot a:hover {
+    background-color: deeppink;
+}
+
+.box .list a:target {
+    opacity: 1;
+}

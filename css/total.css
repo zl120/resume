@@ -1,0 +1,32 @@
+#img_bg {
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.screen_bg1 {
+    background: url(../img/1.jpg) 50% 50%;
+}
+
+.screen_bg2 {
+    background: url(../img/2.jpg) 50% 50%;
+}
+
+.screen_bg3 {
+    background: url(../img/3.jpg) 50% 50%;
+}
+
+.screen_bg4 {
+    background: url(../img/4.jpg) 50% 50%;
+}
+
+.screen_bg5 {
+    background: url(../img/5.jpg) 50% 50%;
+}
+
+.screen_bg6 {
+    background: url(../img/6.jpg) 50% 50%;
+}

@@ -1,0 +1,143 @@
+ul {
+    list-style: none
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*设置背景图片全屏居中显示*/
+
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto !important;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav {
+    width: 1000px;
+    height: 100px;
+    margin: 500px auto;
+}
+
+/*预览块样式*/
+
+.nav ul li {
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 120px;
+    background-color: #00C;
+    margin-right: 50px;
+    z-index: 777;
+}
+
+/*设置不同的列表色*/
+
+.nav ul li:nth-of-type(1) {
+    background-color: #0F3;
+}
+
+.nav ul li:nth-of-type(2) {
+    background-color: #939;
+}
+
+.nav ul li:nth-of-type(3) {
+    background-color: #F9C;
+}
+
+.nav ul li:nth-of-type(4) {
+    background-color: #FF0;
+}
+
+.nav ul li:nth-of-type(5) {
+    background-color: #06F;
+}
+
+/*缩略图样式*/
+
+.nav ul li a::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    left: 15px;
+    border: #FFF solid 2px;
+    border-radius: 50%;
+    z-index: 888;
+}
+
+/*缩略图图片*/
+
+.nav ul li:nth-of-type(1) a::after {
+    background: url(1.jpg) no-repeat center;
+}
+
+.nav ul li:nth-of-type(2) a::after {
+    background: url(2.jpg) no-repeat center;
+}
+
+.nav ul li:nth-of-type(3) a::after {
+    background: url(3.jpg) no-repeat center;
+}
+
+.nav ul li:nth-of-type(4) a::after {
+    background: url(4.jpg) no-repeat center;
+}
+
+.nav ul li:nth-of-type(5) a::after {
+    background: url(5.jpg) no-repeat center;
+}
+
+/*设置缩略图遮罩层*/
+
+.nav ul li a::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 80px;
+    left: 15px;
+    border: #FFF solid 2px;
+    border-radius: 50%;
+    z-index: 99999;
+}
+
+.nav ul li a:hover::before {
+    background: rgba(0, 0, 0, 0);
+}
+
+/*背景图片切换*/
+
+.bga1:target {
+    z-index: 100;
+}
+
+.bga2:target {
+    z-index: 100;
+}
+
+.bga3:target {
+    z-index: 100;
+}
+
+.bga4:target {
+    z-index: 100;
+}
+
+/*设置其他图片隐藏*/
+
+.bg:not(:target) {
+    z-index: 1;
+}

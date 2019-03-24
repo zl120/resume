@@ -1,0 +1,200 @@
+html, div, body, canvas {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    /* //border:1px solid; */
+    border-radius: 50px;
+}
+
+#one {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    animation: one 5s;
+    border-radius: 50px;
+    transform: scale(2, 2);
+    background: #1d953f;
+}
+
+#two {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 25%;
+    left: 50%;
+    margin: -50px 0 0 -50px; 
+    /* //z-index:1;
+    //animation:two 5s; */
+    display: none;
+    background: #ea66a6;
+}
+
+#three {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 25%;
+    margin: -50px 0 0 -50px; 
+    /* //z-index:2;
+    //animation:three 5s; */
+    display: none;
+    background: #e0861a;
+}
+
+#four {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 75%;
+    margin: -50px 0 0 -50px; 
+    /* //z-index:3;
+    //animation:four 5s; */
+    display: none;
+    background: #00ae9d;
+}
+
+#five {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 75%;
+    left: 50%;
+    margin: -50px 0 0 -50px; 
+    /* //z-index:4;
+    //animation:five 5s; */
+    display: none;
+    background: #ed1941;
+}
+
+@keyframes one {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes two {
+    0% {
+        top: 50%
+    }
+    50% {
+        top: 25%;
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes twotwo {
+    0% {
+        top: 25%;
+        transform: scale(1, 1);
+    }
+    50% {
+        top: 50%;
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes three {
+    0% {
+        left: 50%
+    }
+    50% {
+        left: 25%;
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes threethree {
+    0% {
+        left: 25%;
+        transform: scale(1, 1);
+    }
+    50% {
+        left: 50%;
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes four {
+    0% {
+        left: 50%
+    }
+    50% {
+        left: 75%;
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes fourfour {
+    0% {
+        left: 75%;
+        transform: scale(1, 1);
+    }
+    50% {
+        left: 50%;
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes five {
+    0% {
+        top: 50%
+    }
+    50% {
+        top: 75%;
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes fivefive {
+    0% {
+        top: 75%;
+        transform: scale(1, 1);
+    }
+    50% {
+        top: 50%;
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
