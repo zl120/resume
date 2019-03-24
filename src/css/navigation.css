@@ -1,0 +1,12 @@
+.nav-yuan{
+    width: 150px;
+    height: 150px;
+    right: 3%;
+    top: 5%;
+    border-radius: 50%;
+    box-shadow:20px -30px 30px #f3f705 inset;
+    filter:alpha(Opacity=88);
+    -moz-opacity:0.5;opacity: 0.5;
+    /* background-color: aqua; */
+    
+}
