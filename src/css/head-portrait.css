@@ -1,0 +1,62 @@
+
+.W-head-portrait {
+    width: 280px;
+    height: 60px;
+    /* position: position; */
+    z-index: 200;
+    left: 2.5%;
+    top: 4%;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 10px
+}
+
+.W-head-portrait img {
+    margin-left: 4%;
+    width: 60px;
+    height: 100%;
+    border-radius: 50%;
+    float: left;
+    border: 1px solid #ccc
+}
+
+.My-resume {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 0.5%;
+    font-size: 18px;
+    float: left;
+    height: 100%;
+    line-height: 60px;
+    color: #000;
+    font-weight: 800
+}
+
+.My-resume i {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 5px
+}
+
+.My-resume span {
+    display: inline-block;
+    color: white;
+    height: 30px;
+    margin-top: 15px;
+    line-height: 30px;
+    text-align: center;
+    width: 74px;
+    background: #000;
+    border-radius: 4px
+}
+
+.My-resume:hover i {
+    color: #337ab7
+}
+
+.My-resume:hover {
+    color: #337ab7
+}
+
+.clear{clear:both;overflow:hidden}

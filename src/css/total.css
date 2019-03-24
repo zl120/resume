@@ -10,7 +10,7 @@ body {
 
 #img_bg1,#img_bg2,#img_bg3,#img_bg4,#img_bg5,#img_bg6 {
     background-size: cover;
-    position: position;
+    /* position: position; */
     /* width: 0%;
     height: 0%; */
     background-repeat: no-repeat;
